@@ -20,3 +20,7 @@ Shiny app for collecting / drawing your own color data
 - specify a palette of hex colors or DMC thread numbers
 - use the `rhandsontable` package to make a fillable, interactive data frame with the color data
 - click save button to export data to an RDS file
+
+## Cactus data source
+
+The cactus color data came from this cross stitch kit on Etsy: https://www.etsy.com/listing/586195752/desert-cacti-diy-cross-stitch-kit
