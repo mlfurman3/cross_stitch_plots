@@ -146,5 +146,5 @@ color_with_shiny <- function(DF, outdir=getwd(), outfilename="shiny_hexcol"){
   
 }
 
-
+## run shiny app! be sure to use specific output filepath
 color_with_shiny(color_df, outdir='./data/', outfile='cactus_shiny_hexcol')

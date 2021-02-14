@@ -16,6 +16,7 @@ R code for reading and plotting cross stitch art
 
 ## `color_with_shiny.R`
 
-Shiny app for collecting / drawing your own color data.
-
-If you have a palette of hex colors or even DMC thread numbers, you can use this to fill in an interactive data frame with the color data and export to an RDS file.
+Shiny app for collecting / drawing your own color data
+- specify a palette of hex colors or DMC thread numbers
+- use the `rhandsontable` package to make a fillable, interactive data frame with the color data
+- click save button to export data to an RDS file
