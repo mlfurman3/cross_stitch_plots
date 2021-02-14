@@ -7,7 +7,7 @@ library(shiny)
 ## awesome csv for getting RGB hexcodes from DMC thread #'s!
 ## source: https://github.com/adrianj/CrossStitchCreator/blob/master/CrossStitchCreator/Resources/DMC%20Cotton%20Floss%20converted%20to%20RGB%20Values.csv
 dmc <- 
-  read_csv('./DMC Cotton Floss converted to RGB Values.csv') %>% 
+  read_csv('./data/DMC Cotton Floss converted to RGB Values.csv') %>% 
   clean_names()
 
 ## DMC thread numbers for cactus cross stitch
@@ -147,4 +147,4 @@ color_with_shiny <- function(DF, outdir=getwd(), outfilename="shiny_hexcol"){
 }
 
 
-color_with_shiny(color_df, outdir='./', outfile='cactus_shiny_hexcol')
+color_with_shiny(color_df, outdir='./data/', outfile='cactus_shiny_hexcol')

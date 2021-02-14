@@ -9,14 +9,14 @@ library(sp)
 # install.packages('sampSurf)
 
 ## read in cactus data, method 1 (excel spreadsheet)
-cactus_sheet <- readxl::read_xlsx(path = './cactus_hexcol.xlsx', sheet=2)
+cactus_sheet <- readxl::read_xlsx(path = './data/cactus_hexcol.xlsx', sheet=2)
 
 ## read in cactus data, method 2 (csv)
-#cactus_csv <- read_csv('./cactus_hexcol.csv')
+#cactus_csv <- read_csv('./data/cactus_hexcol.csv')
   
 ## read in cactus data, method 3 (rds)
 ## use this one if you collect and save color data with the shiny app 
-# cactus_rds <- read_rds('./cactus_shiny_hexcol.rds') 
+# cactus_rds <- read_rds('./data/cactus_shiny_hexcol.rds') 
 # cactus_rds <- cactus_rds %>%
 #                  mutate_all(funs(str_replace(., '-','#FFFFFF'))) %>%
 #                  add_column(rownum = nrow(cactus_rds):1, .before='1')
@@ -104,7 +104,7 @@ fabric_df_filt %>%
   theme_bw()
 
 ## plot everything together!
-ggplot() + 
+nice_plot <- ggplot() + 
   
   ## add outer ring
   geom_sf(data = circ_outer, fill = NA, col = 'tan', size = 4) + 
@@ -126,3 +126,11 @@ ggplot() +
   
   scale_color_identity() + 
   theme_void()
+
+## show plot
+nice_plot
+
+## not super savvy with ggsave, so I just used the export button
+
+### small graphic - 560 x 630 pixels
+### larger graphic - 937 x 852 pixels
