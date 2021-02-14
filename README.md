@@ -21,7 +21,7 @@ Shiny app for collecting / drawing your own color data
 - use the `rhandsontable` package to make a fillable, interactive data frame with the color data
 - click save button to export data to an RDS file
 
-![Shiny app demo]('shiny_app_demo.gif')
+![Shiny app demo]('./shiny_app_demo.gif')
 
 ## Cactus data source
 
