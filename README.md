@@ -14,6 +14,8 @@ R code for reading and plotting cross stitch art
 - use pairs of diagonal `geom_segment`'s for stitches, with `scale_color_identity` to keep actual hex colors
 - use `geom_sf` for outer ring
 
+![Cactus plot example](img/cactus_nice_small.png)
+
 ## `color_with_shiny.R`
 
 Shiny app for collecting / drawing your own color data
